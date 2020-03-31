@@ -1,2 +1,3 @@
-# be-the-hero
-Projeto desenvolvido durante a Semana OmniStack 11
+# Be The Hero
+
+Projeto desenvolvido durante a Semana OmniStack 11.
