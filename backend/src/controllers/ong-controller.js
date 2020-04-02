@@ -1,7 +1,7 @@
 "use strict";
 
-const crypto = require("crypto");
 const connection = require("../database/connection");
+const { generateUniqueId } = require("../utils");
 
 module.exports.index = async (request, response) => {
   const ongs = await connection("ongs").select("*");
@@ -10,7 +10,7 @@ module.exports.index = async (request, response) => {
 
 module.exports.create = async (request, response) => {
   const { name, email, phone, city, uf } = request.body;
-  const id = crypto.randomBytes(4).toString("HEX");
+  const id = generateUniqueId();
 
   await connection("ongs").insert({
     id,

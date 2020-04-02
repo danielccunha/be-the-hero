@@ -23,7 +23,7 @@ routes.post(
       email: Joi.string()
         .required()
         .email(),
-      phone: Joi.number()
+      phone: Joi.string()
         .required()
         .min(10)
         .max(11),

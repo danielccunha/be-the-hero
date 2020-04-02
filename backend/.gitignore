@@ -108,3 +108,4 @@ dist
 
 # Custom
 **/db.sqlite
+**/test.sqlite
